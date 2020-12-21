@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Retention-Suite">	
+<listeners>
+		<listener class-name="com.cet.listener.Reporting" />
+</listeners>
+	<test thread-count="2" name="Retention-HomeTest" group-by-instances="true">
+		<classes>
+			<class name="com.cet.retention.RetentionHome" />
+			<class name="com.cet.retention.RetentionHomeSkillAssignedTestCases" />
+			<class name="com.cet.retention.RetentionHomeSkillOnlyNotAssignedTestCases" />
+		</classes>
+	</test>
+	<test thread-count="2" name="Retention-SearchTest" group-by-instances="true">
+		<classes>
+			<class name="com.cet.retention.RetentionSearchTestCases" />
+			<class name="com.cet.retention.RetentionSearchEditTestCases" />
+			<class name="com.cet.retention.RetentionSearchViewTestCases" />
+		</classes>
+	</test>
+	<test thread-count="2" name="Retention-UserAdminTest" group-by-instances="true">
+		<classes>
+			<class name="com.cet.retention.RetentionUserAdminSearchTestCases" />
+			<class name="com.cet.retention.RetentionUserAdminEditTestCases" />
+			<class name="com.cet.retention.RetentionUserAdminViewTestCases" />
+		</classes>
+	</test>
+	<test thread-count="2" name="Retention-AssignmentTest" group-by-instances="true">
+		<classes>
+			<class name="com.cet.retention.RetentionAssignmentTestCases" />
+		</classes>
+	</test>
+</suite>

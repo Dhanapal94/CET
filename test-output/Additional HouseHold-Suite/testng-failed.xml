@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Additional HouseHold-Suite]">
+  <listeners>
+    <listener class-name="com.cet.listener.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="INDTS_AdditionalHouseHold-Test(failed)">
+    <classes>
+      <class name="com.cet.INDTSAdditionalHouseHold_Test">
+        <methods>
+          <include name="setINDTSTeam"/>
+          <include name="removeExtent"/>
+          <include name="additionalHouseHoldMembersCount_INDTSTest"/>
+          <include name="setExtent"/>
+          <include name="initializationAddHouseHold"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.cet.INDTSAdditionalHouseHold_Test -->
+    </classes>
+  </test> <!-- INDTS_AdditionalHouseHold-Test(failed) -->
+</suite> <!-- Failed suite [Additional HouseHold-Suite] -->

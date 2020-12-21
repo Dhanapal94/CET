@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Retention-Suite]">
+  <listeners>
+    <listener class-name="com.cet.listener.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Retention-UserAdminTest(failed)">
+    <classes>
+      <class name="com.cet.retention.RetentionUserAdminEditTestCases">
+        <methods>
+          <include name="verifyEditUserInfo"/>
+          <include name="getViewUserInit"/>
+          <include name="removeExtent"/>
+          <include name="setExtent"/>
+          <include name="verifyErrorTextForNoLanguage"/>
+          <include name="getData"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.cet.retention.RetentionUserAdminEditTestCases -->
+      <class name="com.cet.retention.RetentionUserAdminViewTestCases">
+        <methods>
+          <include name="verifyValue"/>
+          <include name="removeExtent"/>
+          <include name="setExtent"/>
+          <include name="getinit"/>
+          <include name="getViewUserInit"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.cet.retention.RetentionUserAdminViewTestCases -->
+    </classes>
+  </test> <!-- Retention-UserAdminTest(failed) -->
+</suite> <!-- Failed suite [Retention-Suite] -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel test suite]">
+  <listeners>
+    <listener class-name="com.cet.listener.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="UserAdminEditUserTest(failed)">
+    <classes>
+      <class name="com.cet.UserAdminEditUserTest">
+        <methods>
+          <include name="editSelectActive"/>
+          <include name="editUncheckAssignWork"/>
+          <include name="verifyEditCancelBtnNavigation"/>
+          <include name="getViewUserInit"/>
+          <include name="editcheckAssignWork"/>
+          <include name="verifyErrorTextForNoLanguage"/>
+          <include name="editSelectInactive"/>
+          <include name="verifyRestMsgLanguage"/>
+          <include name="editSelectLanguage"/>
+          <include name="verifyErrorTextForNoDialingTeam"/>
+          <include name="verifyResetMsgDialingMethod"/>
+          <include name="verifyResetMsgDialingTeam"/>
+          <include name="tearDown"/>
+          <include name="verifyEditUserInfo"/>
+          <include name="verifyErrorTextForNoDialingMethod"/>
+        </methods>
+      </class> <!-- com.cet.UserAdminEditUserTest -->
+    </classes>
+  </test> <!-- UserAdminEditUserTest(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CET-Suite]">
+  <test thread-count="5" name="INDTS_AdditionalHouseHold-Test(failed)">
+    <classes>
+      <class name="com.cet.INDTSNextAdditionalHouseHold_Test">
+        <methods>
+          <include name="initializationAddHouseHold"/>
+          <include name="tear"/>
+          <include name="nextAdditionalHouseHoldMembersFirstName_INDTSTest"/>
+          <include name="nextAdditionalHouseHoldMembersFirstName_INDTSTest"/>
+          <include name="nextAdditionalHouseHoldMembersFirstName_INDTSTest"/>
+          <include name="removeExtent"/>
+          <include name="setExtent"/>
+          <include name="nextAdditionalHouseHoldMembersLastName_INDTSTest"/>
+          <include name="nextAdditionalHouseHoldMembersLastName_INDTSTest"/>
+          <include name="nextAdditionalHouseHoldMembersLastName_INDTSTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.cet.INDTSNextAdditionalHouseHold_Test -->
+      <class name="com.cet.INDTSAdditionalHouseHold_Test">
+        <methods>
+          <include name="removeExtent"/>
+          <include name="setExtent"/>
+          <include name="initializationAddHouseHold"/>
+          <include name="additionalHouseHoldMembersFirstName_INDTSTest"/>
+          <include name="additionalHouseHoldMembersFirstName_INDTSTest"/>
+          <include name="additionalHouseHoldMembersFirstName_INDTSTest"/>
+          <include name="setINDTSTeam"/>
+          <include name="additionalHouseHoldMembersCount_INDTSTest"/>
+          <include name="additionalHouseHoldMembersCount_INDTSTest"/>
+          <include name="additionalHouseHoldMembersCount_INDTSTest"/>
+          <include name="additionalHouseHoldMembersLasttName_INDTSTest"/>
+          <include name="additionalHouseHoldMembersLasttName_INDTSTest"/>
+          <include name="additionalHouseHoldMembersLasttName_INDTSTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.cet.INDTSAdditionalHouseHold_Test -->
+    </classes>
+  </test> <!-- INDTS_AdditionalHouseHold-Test(failed) -->
+</suite> <!-- Failed suite [CET-Suite] -->

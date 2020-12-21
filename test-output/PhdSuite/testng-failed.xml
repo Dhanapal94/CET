@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [PhdSuite]">
+  <listeners>
+    <listener class-name="com.cet.listener.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="PHD-UserAdminTest(failed)">
+    <classes>
+      <class name="com.cet.phd.PhdUserAdminAddNewUser_Test">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="addNewUserManagerDB_Test"/>
+          <include name="initializationPhd_UAAddNew"/>
+          <include name="addLanguage_Skill"/>
+          <include name="addNewUserEmailIDDB_Test"/>
+          <include name="removeExtent"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.cet.phd.PhdUserAdminAddNewUser_Test -->
+    </classes>
+  </test> <!-- PHD-UserAdminTest(failed) -->
+  <test thread-count="5" name="PHD-SearchTest(failed)">
+    <classes>
+      <class name="com.cet.phd.PhdSearch_Test">
+        <methods>
+          <include name="initializationPHD_Search"/>
+          <include name="removeExtent"/>
+          <include name="dialingMethodSearch_PHD_DefaultTest"/>
+          <include name="setExtent"/>
+          <include name="resetPHD_Search"/>
+          <include name="tearDown"/>
+          <include name="createTest"/>
+        </methods>
+      </class> <!-- com.cet.phd.PhdSearch_Test -->
+      <class name="com.cet.phd.PhdSearch_View_Test">
+        <methods>
+          <include name="switchToMainWindow"/>
+          <include name="getinit"/>
+          <include name="selectDisposition_View__Test"/>
+          <include name="initializationPHD_Search"/>
+          <include name="removeExtent"/>
+          <include name="setExtent"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.cet.phd.PhdSearch_View_Test -->
+    </classes>
+  </test> <!-- PHD-SearchTest(failed) -->
+</suite> <!-- Failed suite [PhdSuite] -->

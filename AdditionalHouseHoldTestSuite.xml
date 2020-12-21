@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Additional HouseHold-Suite">
+	<listeners>
+		<listener class-name="com.cet.listener.Reporting" />
+	</listeners>
+	<test thread-count="5" name="INDTS_AdditionalHouseHold-Test" group-by-instances="true">
+		<classes>
+			<class name="com.cet.INDTSAdditionalHouseHold_Test" />
+			<class name="com.cet.INDTSNextAdditionalHouseHold_Test" />
+		</classes>
+	</test>
+	<test thread-count="5" name="GRPTS_AdditionalHouseHold-Test" group-by-instances="true">
+		<classes>
+			<class name="com.cet.GRPTSAdditionalHouseHold_Test" />
+			<class name="com.cet.GRPTSNextAdditionalHouseHold_Test" />
+		</classes>
+	</test>
+</suite>
